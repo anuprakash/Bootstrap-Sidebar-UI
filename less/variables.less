@@ -39,7 +39,7 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             #4F84F0;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
@@ -48,7 +48,26 @@
 @sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
 @serifFontFamily:       Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Menlo, Monaco, Consolas, "Courier New", monospace;
-
+@font-face {
+						font-family: 'DNRM';
+						src: url('../fonts/DINRoundWeb-Medium.eot');
+						src: url('../fonts/DINRoundWeb-Medium.eot?#iefix') format('embedded-opentype'),
+							 url('../fonts/DINRoundWeb-Medium.woff') format('woff');
+}
+@font-face {
+						font-family: 'DNRR';
+						src: url('../fonts/DINRoundWeb.eot');
+						src: url('../fonts/DINRoundWeb.eot?#iefix') format('embedded-opentype'),
+							 url('../fonts/DINRoundWeb.woff') format('woff');
+}
+@font-face {
+						font-family: 'DNLTR';
+						src: url('../fonts/DINTextPro.eot');
+						src: url('../fonts/DINTextPro.eot?#iefix') format('embedded-opentype'),
+						 	 url('../fonts/DINTextPro.woff') format('woff'),
+						 	 url('../fonts/DINTextPro.ttf') format('truetype'),
+						 	 url('../fonts/DINTextPro.svg#wf') format('svg');
+}
 @baseFontSize:          13px;
 @baseFontFamily:        @sansFontFamily;
 @baseLineHeight:        18px;
@@ -169,6 +188,11 @@
 @heroUnitHeadingColor:            inherit;
 @heroUnitLeadColor:               inherit;
 
+// Main
+// -------------------------
+@mainBackground:              @grayLighter;
+@mainHeadingColor:            inherit;
+@mainLeadColor:               inherit;
 
 // Form states and alerts
 // -------------------------
