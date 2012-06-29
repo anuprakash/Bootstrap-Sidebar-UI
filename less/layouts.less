@@ -9,10 +9,21 @@
   .container-fixed();
 }
 
+
+.body {
+	margin-top: @navbarHeight;
+	margin-left: @leftNavWidth;
+}
+
 // Fluid layouts (left aligned, with sidebar, min- & max-width content)
 .container-fluid {
   padding-right: @gridGutterWidth;
   padding-left: @gridGutterWidth;
+  .clearfix();
+}
+.container-fluid.no-padding {
+  padding-right: 0px;
+  padding-left: 0px;
   .clearfix();
 }
 
@@ -32,11 +43,13 @@
     z-index: -1;  
 }
 
+
+
 // HERO UNIT
 // ---------
 
 .main {
-  padding: 40px;
+  padding-top: 40px;
   margin-bottom: 0px;
   background-color: @mainBackground;
   h1 {
